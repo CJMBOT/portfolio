@@ -1,11 +1,31 @@
 *{
-    background-color: darkslategray;
-    color: bisque;
+    
+    color: #ECFEAA;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{background-color: #363732;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    width: 2fr;
+}
+ul{
+    display: flex;
+    list-style-type:circle;
+}
+li{
+    margin: 0 2em;
+}
+.logo{
+    width: 60px;
 }
 main{
     width: 1300px;
     margin: auto;
+    
 }
 h1{
     font-size: 50px;
@@ -22,21 +42,23 @@ h3{
     display: flex;
    flex-flow: row wrap;
    justify-content: space-around;
-    
+    padding: 0 20px;
 }
 .proj{
 display: block;
 width: 350px;
 height: 500px;
 position: relative;
-margin: 10px;
+margin: 20px 0px;
 align-items: center;
-background-color: rgb(72, 83, 83);
+background-color: #6F9283;
 border-radius: 25px;
+
 }
 .projimg{
     display: block;
     width: 90%;
+    border-radius: 25px;
     margin: 15px;
     background-color: rgba(0, 0, 0, 0);
 box-sizing: border-box;
@@ -44,9 +66,11 @@ box-sizing: border-box;
 .projcardtitle{
 text-align: center;
 background-color: rgba(0, 0, 0, 0);
+color: #363732
 
 }
 .projcardpara{
     text-align: center;
+    color: #363732;
     background-color: rgba(0, 0, 0, 0);
 }
