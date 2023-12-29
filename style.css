@@ -1,17 +1,19 @@
-*{
-    
-    color: #ECFEAA;
+*{    color: #ECFEAA;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    width: 1300px;
+    margin: auto;
 }
 body{background-color: #363732;
 }
 header{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-nav{
-    width: 2fr;
-}
+
 ul{
     display: flex;
     list-style-type:circle;
@@ -20,7 +22,7 @@ li{
     margin: 0 2em;
 }
 .logo{
-    width: 60px;
+    width: 100px;
 }
 main{
     width: 1300px;
@@ -73,4 +75,8 @@ color: #363732
     text-align: center;
     color: #363732;
     background-color: rgba(0, 0, 0, 0);
+}
+#codelink{
+    color: rgb(148, 148, 235);
+    text-decoration: underline;
 }
