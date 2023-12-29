@@ -3,25 +3,50 @@
     color: bisque;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+main{
+    width: 1300px;
+    margin: auto;
+}
 h1{
     font-size: 50px;
     text-align: center;
 }
 h2{
     text-decoration: underline;
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
 }
 .picbox{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+   flex-flow: row wrap;
+   justify-content: space-around;
+    
 }
 .proj{
-display: flex;
+display: block;
+width: 350px;
+height: 500px;
+position: relative;
+margin: 10px;
+align-items: center;
+background-color: rgb(72, 83, 83);
+border-radius: 25px;
 }
 .projimg{
-justify-content: center;
+    display: block;
+    width: 90%;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0);
+box-sizing: border-box;
 }
-.projcardtitle{}
+.projcardtitle{
+text-align: center;
+background-color: rgba(0, 0, 0, 0);
+
+}
 .projcardpara{
     text-align: center;
+    background-color: rgba(0, 0, 0, 0);
 }
