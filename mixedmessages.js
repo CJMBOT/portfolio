@@ -32,7 +32,7 @@ function spiritAnimal() {
     //console.log(`${animals.length} animal choices, ${strength.length} strengths, ${weakness.length} weaknesses, ${advice.length} and ${funnyAdvice.length} advices`);
     //And for use on the webpage:
     document.getElementById("mixedmessages").innerHTML=`Hello! Today your spirit animal is ${chosenAnimal}. You get your strength from ${chosenStrength} but your weakness is ${chosenWeakness}.
-    Just remember: ${chosenAdvice}.`;
+    Just remember: ${chosenAdvice}`;
     //alert(`Hello! Today your spirit animal is ${chosenAnimal}. You get your strength from ${chosenStrength} but your weakness is ${chosenWeakness}.
     //Just remember: ${chosenAdvice}.`)
 };

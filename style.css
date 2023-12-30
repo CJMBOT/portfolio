@@ -52,23 +52,22 @@ h3.projcardtitle{
 .proj{
 display: block;
 width: 350px;
-height: 500px;
+height: 475px;
 position: relative;
 margin: 20px 0px;
 align-items: center;
-background-color: #6F9283;
+background-color: #9ca578;
 border-radius: 25px;
-}
-.proja{
-    text-decoration: none;
+text-decoration: none;
 }
 .projimg{
     display: block;
     width: 90%;
     border-radius: 25px;
-    margin: 15px 5% 0px 5%;
+    margin: 5% 5% 0px 5%;
     background-color: rgba(133, 32, 32, 0);
     box-sizing: border-box;
+    object-fit: cover;
 }
 .projcardtitle{
 text-align: center;
@@ -84,10 +83,24 @@ color: #363732
 .button{
     color: #363732;
 }
+.skilllogos{
+    display: flex;
+    justify-content: space-around;
+}
+.languagelogo{
+    width: 175px;
+    height: 175px;
+}
+.githublink{
+    color: aqua;
+}
 #codelink{
     color: rgb(148, 148, 235);
     text-decoration: underline;
 }
 #mixedmessages{
     color: aqua;
+}
+#fox{
+    object-position: 0 25%;
 }

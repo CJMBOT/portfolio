@@ -19,8 +19,8 @@
                 <!--<li><a href="XXX">Home</a></li>-->
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="index.html#project_section">Projects</a></li>
-                <li><a href="XXX">Skills</a></li>
-                <li><a href="XXX">Contact</a></li>
+                <li><a href="index.html#skill_section">Skills</a></li>
+                <li><a href="index.html#contact_section">Contact</a></li>
             </ul>
         </nav>
         <!--<div class="time">
@@ -31,6 +31,7 @@
         <div class="title">
             <h1 id="title"> Project 1: Spirit Animal Randomiser</h1>
         </div>
+        <div class="prjexplain">
         <p>This was the result of my 'Mixed Messages' project set by Codecademy that challenged me to use Javascript in order to create a message that would change each time you executed it. 
         <br><br>
         The script contains a few arrays from which a random item is chosen to populate certain parts of the final message. This message tells you what your spirit animal is today, as well as where you get your strength from, what causes your weakness and ends with a little nugget of wisdom. 
@@ -45,8 +46,14 @@
         </p>
         <div class="mixedmessages">
             <p id="mixedmessages"></p>
+            <input class="button" type = "button" onclick = "spiritAnimal()" value = "Re-roll Message">
+        </div>
+        </div>
+        <div class="githublink">
+            <h2> Link </h2>
+            <p>You can find the code and README file at <a href="https://github.com/CJMBOT/MixedMessages"><span id="prj1link">//github.com/CJMBOT/MixedMessages</span></a>.</p>
         </div>
     </main>
     <script type="text/javascript" src="mixedmessages.js"></script>
-    <input class="button" type = "button" onclick = "spiritAnimal()" value = "Re-roll Message">
+    
 </body>
