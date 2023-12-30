@@ -9,11 +9,22 @@ body{background-color: #363732;
 }
 header{
     display: flex;
+    width: 1304px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: #363732;
+    top: 0px;
+    padding-top: 5px;
+    
 }
-
+main{
+    position: relative;
+    padding-top: 100px;
+    display: block;
+}
 ul{
     display: flex;
     list-style-type:circle;
@@ -59,6 +70,7 @@ align-items: center;
 background-color: #9ca578;
 border-radius: 25px;
 text-decoration: none;
+flex-wrap: wrap;
 }
 .projimg{
     display: block;
@@ -103,4 +115,91 @@ color: #363732
 }
 #fox{
     object-position: 0 25%;
+}
+@media only screen and (min-width:800px) and (max-width: 1250px){
+    html,header, main{
+        width: 800px;
+        margin: auto;
+    };
+    .projects,.picbox{
+        width: 800px;
+    }
+    .languagelogo{
+        width: 100px;
+        height: 100px;
+    }
+    }
+@media only screen and (min-width:450px) and (max-width:800px){
+    html,header,main{
+        width: 450px;
+    }
+    main{
+        padding-top: 50px;
+    }
+    li{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .projects,.picbox{
+        width: 450px;
+        margin: auto;
+    }
+    .languagelogo{
+        width: 50px;   
+        height: 50px;
+    }
+    .proj{
+        width: 200px;
+        height: 220px;
+    }
+    .projimg{
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+    .projcardpara{
+        display: none;
+    }
+    .logo{
+        width: 30px;
+    }
+}
+@media only screen and (max-width:450px){
+    html,header,main{
+        width: 250px;
+    }
+    main{
+        padding-top: 50px;
+    }
+    li{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .projects,.picbox{
+        width: 250px;
+        margin: auto;
+    }
+    .languagelogo{
+        width: 50px;   
+        height: 50px;
+    }
+    .proj{
+        width: 200px;
+        height: 220px;
+    }
+    .projimg{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    .projcardpara{
+        display: none;
+    }
+    .logo{
+        width: 30px;
+    }
 }
