@@ -40,6 +40,9 @@ h2{
 h3{
     font-size: 30px;
 }
+h3.projcardtitle{
+    margin: 10px 0px 0px 0px;
+}
 .picbox{
     display: flex;
    flex-flow: row wrap;
@@ -55,15 +58,17 @@ margin: 20px 0px;
 align-items: center;
 background-color: #6F9283;
 border-radius: 25px;
-
+}
+.proja{
+    text-decoration: none;
 }
 .projimg{
     display: block;
     width: 90%;
     border-radius: 25px;
-    margin: 15px;
-    background-color: rgba(0, 0, 0, 0);
-box-sizing: border-box;
+    margin: 15px 5% 0px 5%;
+    background-color: rgba(133, 32, 32, 0);
+    box-sizing: border-box;
 }
 .projcardtitle{
 text-align: center;
@@ -79,4 +84,7 @@ color: #363732
 #codelink{
     color: rgb(148, 148, 235);
     text-decoration: underline;
+}
+#mixedmessages{
+    color: aqua;
 }
