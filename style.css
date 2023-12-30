@@ -81,6 +81,9 @@ color: #363732
     color: #363732;
     background-color: rgba(0, 0, 0, 0);
 }
+.button{
+    color: #363732;
+}
 #codelink{
     color: rgb(148, 148, 235);
     text-decoration: underline;
