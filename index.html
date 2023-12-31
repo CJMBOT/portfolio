@@ -7,20 +7,21 @@
     <title>CJM Projects</title>
 
 </head>
-<body>
+<body id="body">
     <header>
         <div class="logo">
-           <a href="xxx">
-             <img class="logo" src="Logo workshop.png" alt="The CJM Logo">
+           <!--<a href="xxx">-->
+             <img id="logo" src="Logo workshop.png" alt="The CJM Logo">
             </a>
         </div>
+        <button id="button" value="Light Mode">Light Mode</button>
         <!--Navigation Bar-->
         <nav>
             <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="#project_section">Projects</a></li>
-                <li><a href="#skill_section">Skills</a></li>
-                <li><a href="#contact_section">Contact</a></li>
+                <li><a class="nav" href="index.html">About Me</a></li>
+                <li><a class="nav" href="#project_section">Projects</a></li>
+                <li><a class="nav" href="#skill_section">Skills</a></li>
+                <li><a class="nav" href="#contact_section">Contact</a></li>
             </ul>
         </nav>
         <!--<div class="time">
@@ -40,6 +41,7 @@
             creating this website to showcase all of my projects. These projects vary from simple assignments for learning code to 
             larger endeavours combining a variety of ideas and skills. 
             </p>
+            
         </div>
         <br>
         <!--Project Section-->
@@ -107,7 +109,33 @@
                 <!--<p id="footertalk">Something worthwhile will be put here eventually.</p>-->
             </footer>
     </main>
-
+<script>;
+    let logo = document.getElementById('button');
+    let header = document.querySelector("header");
+    let text = document.querySelectorAll("*");
+    let cardtitle = document.querySelectorAll(".projcardtitle");
+    let cardwords = document.querySelectorAll(".projcardpara");
+    let button = document.querySelectorAll("#button")
+    let light = 0;
+    function lightMode(){
+        if(light === 0){
+            //alert('hello');//
+            document.body.style.backgroundColor ='white';
+            header.style.backgroundColor = 'white';
+            for (const x of text) {x.style.color= 'black'};
+            light = 1;
+        } else {
+            document.body.style.backgroundColor = '#363732';
+            header.style.backgroundColor = '#363732';
+            for (const x of text) {x.style.color = '#ECFEAA'};
+            for (const x of cardtitle) {x.style.color='#363732'}
+            for (const x of cardwords) {x.style.color='#363732'}
+            for (const x of button) {x.style.color='#363732'}
+            light = 0;
+        }
+    }
+    document.getElementById("button").addEventListener("click",lightMode);
+</script>
 </body>
 <foot>
 

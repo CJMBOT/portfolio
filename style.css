@@ -32,7 +32,7 @@ ul{
 li{
     margin: 0 2em;
 }
-.logo{
+#logo{
     width: 100px;
 }
 main{
@@ -116,6 +116,9 @@ color: #363732
 #fox{
     object-position: 0 25%;
 }
+#button{
+    color: #363732;
+}
 @media only screen and (min-width:800px) and (max-width: 1250px){
     html,header, main{
         width: 800px;
@@ -162,34 +165,35 @@ color: #363732
     .projcardpara{
         display: none;
     }
-    .logo{
-        width: 30px;
+    #logo{
+        width: 50px;
+        height: 50px;
     }
 }
-@media only screen and (max-width:450px){
+@media only screen and (min-width:10px) and (max-width:450px){
     html,header,main{
-        width: 250px;
+        min-width: 100px;
     }
     main{
-        padding-top: 50px;
+        padding-top: 75px;
     }
     li{
-        font-size: 14px;
+        font-size: 10px;
     }
     h3{
         font-size: 18px;
     }
     .projects,.picbox{
-        width: 250px;
+        min-width: 100px;
         margin: auto;
     }
     .languagelogo{
-        width: 50px;   
-        height: 50px;
+        width: 25px;   
+        height: 25px;
     }
     .proj{
         width: 200px;
-        height: 220px;
+        height: 160px;
     }
     .projimg{
         width: 100px;
@@ -199,7 +203,8 @@ color: #363732
     .projcardpara{
         display: none;
     }
-    .logo{
+    #logo{
         width: 30px;
+        height: 30px;
     }
 }

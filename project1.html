@@ -9,11 +9,12 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div id="logo">
            <a href="xxx">
-             <img class="logo" src="Logo workshop.png" alt="The CJM Logo">
+             <img id="logo" src="Logo workshop.png" alt="The CJM Logo">
             </a>
         </div>
+        <button id="button" value="Light Mode">Light Mode</button>
         <nav>
             <ul>
                 <!--<li><a href="XXX">Home</a></li>-->
@@ -55,5 +56,31 @@
         </div>
     </main>
     <script type="text/javascript" src="mixedmessages.js"></script>
-    
+    <script>;
+        let logo = document.getElementById('button');
+        let header = document.querySelector("header");
+        let text = document.querySelectorAll("*:not(.button,#mixedmessages)");
+        let cardtitle = document.querySelectorAll(".projcardtitle");
+        let cardwords = document.querySelectorAll(".projcardpara");
+        let button = document.querySelectorAll("#button")
+        let light = 0;
+        function lightMode(){
+            if(light === 0){
+                //alert('hello');//
+                document.body.style.backgroundColor ='white';
+                header.style.backgroundColor = 'white';
+                for (const x of text) {x.style.color= 'black'};
+                light = 1;
+            } else {
+                document.body.style.backgroundColor = '#363732';
+                header.style.backgroundColor = '#363732';
+                for (const x of text) {x.style.color = '#ECFEAA'};
+                for (const x of cardtitle) {x.style.color='#363732'}
+                for (const x of cardwords) {x.style.color='#363732'}
+                for (const x of button) {x.style.color='#363732'}
+                light = 0;
+            }
+        }
+        document.getElementById("button").addEventListener("click",lightMode);
+    </script>
 </body>
